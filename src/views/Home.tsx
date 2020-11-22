@@ -5,7 +5,9 @@ function Home() {
   return (
     <>
       <NavBar />
-      <h1>Home</h1>
+      <div className="row justify-content-center mt-5">
+        <div className="font-weight-light display-4">Home</div>
+      </div>
     </>
   );
 }

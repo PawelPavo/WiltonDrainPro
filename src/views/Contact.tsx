@@ -5,7 +5,9 @@ function Contact() {
   return (
     <>
       <NavBar />
-      <h1>Contact</h1>
+      <div className="row justify-content-center mt-5">
+        <div className="font-weight-light display-4">Contact</div>
+      </div>
     </>
   );
 }

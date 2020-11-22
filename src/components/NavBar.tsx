@@ -4,7 +4,7 @@ import styled from 'styled-components';
 function Home() {
     return (
         <Layout>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light shadow">
                 <a className="navbar-brand" href="/">
                     <img src="/Plumbing_Logo-No-BG.png" alt="Logo" style={{height: "100px", width: "auto"}}/>
                 </a>
