@@ -42,9 +42,9 @@ const Contact: React.FC<IContactProps> = (props) => {
       />
       <Wave>
         <div className="container">
-          <div className="row mt-5 justify-content-center display-4">Contact</div>
+          <div className="row mt-3 justify-content-center display-4">Contact</div>
           <div className="row mt-5 justify-content-center">
-            <div className="col-md-8">
+            <div className="col-md-8 border p-5 shadow-sm">
               <form>
                 <div className="form-group">
                   <small className="form-text text-muted">Subject</small>
@@ -70,7 +70,7 @@ const Contact: React.FC<IContactProps> = (props) => {
                 <div className="form-group">
                   <small className="form-text text-muted">Message</small>
                   <textarea
-                    rows={5}
+                    rows={3}
                     value={body}
                     onChange={(e: React.ChangeEvent<any>) => setBody(e.target.value)}
                     className="form-control" />
