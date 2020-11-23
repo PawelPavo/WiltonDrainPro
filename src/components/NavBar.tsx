@@ -14,13 +14,13 @@ function Home() {
                 <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item active">
-                            <a className="nav-link nav-text mx-3" href="/">Home</a>
+                            <a className="nav-link nav-text mx-5" href="/">Home</a>
                         </li>
                         <li className="nav-item active">
-                            <a className="nav-link nav-text mx-3" href="/services">Services</a>
+                            <a className="nav-link nav-text mx-5" href="/services">Services</a>
                         </li>
                         <li className="nav-item active">
-                            <a className="nav-link nav-text mx-3" href="contact">Contact</a>
+                            <a className="nav-link nav-text mx-5" href="contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -32,9 +32,9 @@ function Home() {
 const Layout = styled.div `
 .nav-text {
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
     letter-spacing: 3px;
-    font-weight: light;
+    font-weight: lighter;
 }
 
 .nav-text:hover {
