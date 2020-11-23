@@ -3,14 +3,21 @@ import GoogleFontLoader from 'react-google-font-loader';
 import styled from 'styled-components';
 import NavBar from '../components/NavBar';
 
+
+// value={subject}
+// onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSubject(e.target.value)}
+
+
 const Contact: React.FC<IContactProps> = (props) => {
 
   const [subject, setSubject] = React.useState<string>('')
   const [body, setBody] = React.useState<string>('')
+  const [name, setName] = React.useState<string>('')
+  const [phone, setPhone] = React.useState<any>('')
 
   const onSubmit = async () => {
     try {
-      window.open(`mailto:WiltonDrianPro@gmail.com?subject=${subject}&body=${body}`);
+      window.open(`mailto:WiltonDrianPro@gmail.com?subject=${subject}&body=${body}, Name: ${name}, Phone: ${phone} `);
     } catch (error) {
       console.log(error);
     }
@@ -18,6 +25,7 @@ const Contact: React.FC<IContactProps> = (props) => {
 
   return (
     <>
+
       <NavBar />
       <GoogleFontLoader
         fonts={[
@@ -32,79 +40,67 @@ const Contact: React.FC<IContactProps> = (props) => {
         ]}
         subsets={['cyrillic-ext', 'greek']}
       />
-      <main className="container">
-        <div className="row d-flex justify-content-center align-items-center">
-          <div className="display-4 mt-5 mb-3">Contact</div>
-        </div>
-        <div className="row d-flex justify-content-center align-items-center ">
-          <div className="col-md-7 order-md-12 bg-white"
-            style={{ minHeight: "400px" }}
-          >
-            <form className="form-group"
-              onSubmit={onSubmit}>
-              <input
-                type="text"
-                className="input-group my-5 pt-3 w-75 mx-auto"
-                placeholder="Email Title"
-                value={subject}
-                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSubject(e.target.value)}
-              />
-              <textarea
-                className="input-group my-3 w-75 mx-auto"
-                id="subject"
-                name="subject"
-                placeholder="Your Message"
-                value={body}
-                onChange={(e: React.ChangeEvent<any>) => setBody(e.target.value)}
-                style={{ height: "170px" }}>
-              </textarea>
-              <div className="row justify-content-center">
-                <button className="btn border my-2 shoadow w-50 text-muted">Email Me!</button>
-              </div>
-            </form>
+      <Wave>
+        <div className="container">
+          <div className="row mt-5 justify-content-center display-4">Contact</div>
+          <div className="row mt-5 justify-content-center">
+            <div className="col-md-8">
+              <form>
+                <div className="form-group">
+                  <small className="form-text text-muted">Subject</small>
+                  <input
+                    value={subject}
+                    onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSubject(e.target.value)}
+                    className="form-control" />
+                </div>
+                <div className="form-group">
+                  <small className="form-text text-muted">Name</small>
+                  <input
+                    value={name}
+                    onChange={(e: React.ChangeEvent<HTMLInputElement>) => setName(e.target.value)}
+                    className="form-control" />
+                </div>
+                <div className="form-group">
+                  <small className="form-text text-muted">Phone</small>
+                  <input
+                    value={phone}
+                    onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPhone(e.target.value)}
+                    className="form-control" />
+                </div>
+                <div className="form-group">
+                  <small className="form-text text-muted">Message</small>
+                  <textarea
+                    rows={5}
+                    value={body}
+                    onChange={(e: React.ChangeEvent<any>) => setBody(e.target.value)}
+                    className="form-control" />
+                </div>
+                <div className="row justify-content-center">
+                  <button
+                    onClick={onSubmit}
+                    type="submit" className="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
           </div>
-          <ColummBackground
-            style={{ minHeight: "400px" }}
-            className="col-md-4 order-md-1= background">
-            <div className="row d-block mt-5">
-            <div className="text-center text-white font-weight-bold">Our location:</div>
-              <div className="text-center text-white font-weight-lighter">2132 NE 11th Ave,</div>
-              <div className="text-center text-white font-weight-lighter">Wilton Manors</div>
-              <div className="text-center text-white font-weight-lighter">FL 33305</div>
-            </div>
-            <div className="row d-block mt-5">
-              <div className="text-center text-white font-weight-bold">Phone:</div>
-              <div className="text-center text-white font-weight-lighter">(561) 303 - 9111</div>
-            </div>
-            <div className="row d-block mt-5">
-              <div className="text-center text-white font-weight-bold">Email::</div>
-              <div className="text-center text-white font-weight-lighter">WiltonDrainPro@gmail.com</div>
-            </div>
-          </ColummBackground>
         </div>
-      </main>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#f3f4f5" fillOpacity="1" d="M0,64L80,90.7C160,117,320,171,480,176C640,181,800,139,960,106.7C1120,75,1280,53,1360,42.7L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+        </svg>
+      </Wave>
     </>
   )
 }
 
 
-const ColummBackground = styled.div`
+const Wave = styled.div`
 
-background: linear-gradient(-45deg, #289740, #881f7d, #f18417, #dd2614, #2a9642);
-background-size: 200% 100%;
-animation: gradient 15s ease infinite;
-height: 100%;
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+img {
+  @media not all and (min-width: 768px) {
+              width: 75%;
+    padding-bottom: 100px;
+  }
+}
 
 `
 export interface IContactProps { }

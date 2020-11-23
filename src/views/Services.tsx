@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import NavBar from '../components/NavBar';
 import ServiceCard from '../components/ServiceCard'
 
@@ -37,18 +38,33 @@ const ServicesArray = [
 
 function Services() {
   return (
-    <>
+    <Wave>
       <NavBar />
-      <div className="row justify-content-center mt-5">
-        <div className="font-weight-light display-4">Services</div>
+      <div className="wave-container">
+        <div className="row justify-content-center mt-3">
+          <div className="font-weight-light display-4">Services</div>
+        </div>
+        <div className="row justify-content-center">
+          {ServicesArray.map(service => (
+            <ServiceCard key={service.name} service={service} />
+          ))}
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#f3f4f5" fill-opacity="1" d="M0,32L80,58.7C160,85,320,139,480,170.7C640,203,800,213,960,181.3C1120,149,1280,75,1360,37.3L1440,0L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+        </svg>
       </div>
-      <div className="row justify-content-center">
-        {ServicesArray.map(service => (
-          <ServiceCard key={service.name} service={service} />
-        ))}
-      </div>
-    </>
+    </Wave>
   );
 }
+
+const Wave = styled.div`
+
+.wave-container {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+`
 
 export default Services;
