@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/PawelPavo/WiltonDrainPro/static/js/main.30c4a86b.chunk.js",
+    "main.js.map": "/PawelPavo/WiltonDrainPro/static/js/main.30c4a86b.chunk.js.map",
+    "runtime-main.js": "/PawelPavo/WiltonDrainPro/static/js/runtime-main.97477f99.js",
+    "runtime-main.js.map": "/PawelPavo/WiltonDrainPro/static/js/runtime-main.97477f99.js.map",
+    "static/css/2.43b2b750.chunk.css": "/PawelPavo/WiltonDrainPro/static/css/2.43b2b750.chunk.css",
+    "static/js/2.92b2561d.chunk.js": "/PawelPavo/WiltonDrainPro/static/js/2.92b2561d.chunk.js",
+    "static/js/2.92b2561d.chunk.js.map": "/PawelPavo/WiltonDrainPro/static/js/2.92b2561d.chunk.js.map",
+    "static/js/3.1a976019.chunk.js": "/PawelPavo/WiltonDrainPro/static/js/3.1a976019.chunk.js",
+    "static/js/3.1a976019.chunk.js.map": "/PawelPavo/WiltonDrainPro/static/js/3.1a976019.chunk.js.map",
+    "index.html": "/PawelPavo/WiltonDrainPro/index.html",
+    "static/css/2.43b2b750.chunk.css.map": "/PawelPavo/WiltonDrainPro/static/css/2.43b2b750.chunk.css.map",
+    "static/js/2.92b2561d.chunk.js.LICENSE.txt": "/PawelPavo/WiltonDrainPro/static/js/2.92b2561d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.97477f99.js",
+    "static/css/2.43b2b750.chunk.css",
+    "static/js/2.92b2561d.chunk.js",
+    "static/js/main.30c4a86b.chunk.js"
+  ]
+}
