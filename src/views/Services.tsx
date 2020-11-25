@@ -1,6 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
-import NavBar from '../components/NavBar';
 import ServiceCard from '../components/ServiceCard'
 
 const ServicesArray = [
@@ -38,24 +36,19 @@ const ServicesArray = [
 
 function Services() {
   return (
-    <Wave>
-      <NavBar />
-      <div className="">
-        <div className="row justify-content-center">
+    <>
+      <div className="container">
+        <div className="row justify-content-center my-5">
           <div className="font-weight-light display-4">Services</div>
         </div>
-        <div className="row justify-content-center mt-5">
+        <div className="row justify-content-center">
           {ServicesArray.map(service => (
             <ServiceCard key={service.name} service={service} />
           ))}
         </div>
       </div>
-    </Wave>
+    </>
   );
 }
-
-const Wave = styled.div`
-
-`
 
 export default Services;

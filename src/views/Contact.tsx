@@ -1,8 +1,5 @@
 import * as React from 'react';
 import GoogleFontLoader from 'react-google-font-loader';
-import styled from 'styled-components';
-import NavBar from '../components/NavBar';
-
 
 // value={subject}
 // onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSubject(e.target.value)}
@@ -25,7 +22,6 @@ const Contact: React.FC<IContactProps> = (props) => {
 
   return (
     <>
-      <NavBar />
       <GoogleFontLoader
         fonts={[
           {
@@ -39,9 +35,8 @@ const Contact: React.FC<IContactProps> = (props) => {
         ]}
         subsets={['cyrillic-ext', 'greek']}
       />
-      <Wave>
-        <div className="container vh-100">
-          <div className="row justify-content-center display-4">Contact</div>
+        <div className="container">
+          <div className="row justify-content-center display-4 my-5">Contact</div>
           <div className="row mt-3 justify-content-center">
             <div className="col-md-8 border p-5 shadow-sm">
               <form>
@@ -83,15 +78,10 @@ const Contact: React.FC<IContactProps> = (props) => {
             </div>
           </div>
         </div>
-      </Wave>
     </>
   )
 }
 
-
-const Wave = styled.div`
-
-`
 export interface IContactProps { }
 
 export default Contact;

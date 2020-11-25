@@ -1,69 +1,44 @@
 import React from 'react';
-import styled from 'styled-components';
+import GoogleFontLoader from 'react-google-font-loader';
 
-function Home() {
+const NavigationBar: React.FC<NavigationBarProps> = (props) => {
     return (
-        <Layout>
-            <nav className=" fixed-top navbar navbar-expand-lg navbar-light bg-light shadow">
+        <>
+            <GoogleFontLoader
+                fonts={[
+                    {
+                        font: 'Martel',
+                        weights: [400, '400i'],
+                    },
+                ]}
+            />
+            <nav className="sticky-top navbar navbar-expand-lg navbar-light bg-light shadow">
                 <a className="navbar-brand" href="/">
-                    <img src="/Plumbing Logo.gif" alt="Logo" style={{ height: "65px", width: "auto" }} />
+                    <img className="ml-5" src="/Plumbing Logo.gif" alt="Logo" style={{ height: "65px", width: "auto" }} />
                 </a>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button className="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul className="navbar-nav">
-                        <li className="nav-item active">
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <span className="navbar-text" style={{ fontSize: "1.4rem", fontFamily:"Martel" }}>
+                        <a href="Tel:5613039111" className="text-success text-decoration-none mx-5">Call Us: (561) 303 - 9111</a>
+                    </span>
+                    <ul className="navbar-nav font-weight-light mx-auto" style={{ fontSize: "1.2rem" }}>
+                        <li className="nav-item">
                             <a className="nav-link nav-text mx-5" href="/">Home</a>
                         </li>
-                        <li className="nav-item active">
+                        <li className="nav-item">
                             <a className="nav-link nav-text mx-5" href="/services">Services</a>
                         </li>
-                        <li className="nav-item active">
+                        <li className="nav-item">
                             <a className="nav-link nav-text mx-5" href="contact">Contact</a>
                         </li>
                     </ul>
                 </div>
             </nav>
-        </Layout>
+        </>
     );
 }
 
-const Layout = styled.div`
-.nav-text {
-    text-decoration: none;
-    font-size: 1.5rem;
-    letter-spacing: 3px;
-    font-weight: lighter;
-    transition: all .4s ease;
-    -webkit-transition: all .4s ease; 
-
-}
-
-.nav-text:hover {
-    font-weight: normal;
-
-}
-
-.heart-text {
-    color: red;
-    animation-name: heart;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-  }
-  
-  @keyframes heart {
-    0%   {color: red;}
-    50%  {color: pink; }
-    100% {color: red;}
-  }
-
-  .wave-container {
-    position: relative;
-    text-align: center;
-    
-
-
-`
-
-export default Home;
+export interface NavigationBarProps { }
+export default NavigationBar;
