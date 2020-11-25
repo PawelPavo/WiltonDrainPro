@@ -30,10 +30,11 @@ const ServicesCard: React.FC<ServicesCardProps> = (props) => {
                         <div className="card-title text-center name-text">{props.service.name}</div>
                         <p className="card-text text-center text-muted mb-3">{props.service.description}</p>
                     </div>
-                    <div className="text-center card-footer bg-white border-0">
+                    <div className="row justify-content-around card-footer bg-white border-0">
                         <a href="/contact" className="card-link text-center font-weight-light">
-                        <button type="button" className="btn btn-outline-primary">Book Now!</button>
+                            <button type="button" className="btn btn-outline-primary">Email</button>
                         </a>
+                        <a href="tel:5613039111" className="btn btn-outline-success rounded-pill px-4">Call</a>
                     </div>
                 </div>
             </div>
