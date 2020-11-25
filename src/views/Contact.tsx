@@ -35,10 +35,11 @@ const Contact: React.FC<IContactProps> = (props) => {
         ]}
         subsets={['cyrillic-ext', 'greek']}
       />
-        <div className="container">
-          <div className="row justify-content-center display-4 my-5">Contact</div>
-          <div className="row mt-3 justify-content-center">
-            <div className="col-md-8 border p-5 shadow-sm">
+      <div className="container">
+        <div className="row justify-content-center display-4 mt-5">Contact</div>
+        <div className="row mt-3 justify-content-center border shadow p-3">
+          <div className="col-md-7">
+            <div className="card border-0">
               <form>
                 <div className="form-group">
                   <small className="form-text text-muted">Subject</small>
@@ -69,15 +70,28 @@ const Contact: React.FC<IContactProps> = (props) => {
                     onChange={(e: React.ChangeEvent<any>) => setBody(e.target.value)}
                     className="form-control" />
                 </div>
-                <div className="row justify-content-center">
+                <div className="card-footer border-0 bg-white text-center">
                   <button
                     onClick={onSubmit}
-                    type="submit" className="btn btn-primary">Submit</button>
+                    type="submit" className="btn btn-outline-primary btn-lg btn-block">Submit</button>
                 </div>
               </form>
             </div>
           </div>
+          <div className="col-md-4 mt-3">
+            <div className="card">
+              <iframe src="https://maps.google.com/maps?q=wilton%20manors&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" allowFullScreen ></iframe>
+              <div className="card-title">
+                <div className="card-body text-center">
+                  <h5 className="card-title">Phone: (561) 303 - 9111</h5>
+                  <p>2132 NE 11th Ave.</p>
+                  <p>Wilton Manors, FL 33305</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </>
   )
 }
