@@ -12,7 +12,7 @@ const NavigationBar: React.FC<NavigationBarProps> = (props) => {
                     },
                 ]}
             />
-            <nav className="sticky-top navbar navbar-expand-lg navbar-light bg-light shadow">
+            <nav className="sticky-top navbar navbar-expand-lg navbar-light bg-light shadow bg-white">
                 <a className="navbar-brand" href="/">
                     <img className="ml-5" src="/Plumbing Logo.gif" alt="Logo" style={{ height: "65px", width: "auto" }} />
                 </a>

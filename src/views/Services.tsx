@@ -10,7 +10,7 @@ const ServicesArray = [
   {
     id: 2,
     name: "Drain Cleaning",
-    description: "Plumbing stoppages are one of those disgusting facts of life that most of us prefer to ignore when they occur. However, it is important to know when the plumbing problem is out of your control and that you should call your plumber to prevent it from escalating.",
+    description: "Plumbing stoppages are one of those facts of life that most of us prefer to ignore. However, it is important to know when the plumbing problem is out of your control and that you should call your plumber to prevent it.",
   },
   {
     id: 3,
@@ -20,12 +20,12 @@ const ServicesArray = [
   {
     id: 4,
     name: "Video Camera Inspections",
-    description: "Know before we dig. We offer video inspections of sewer lines to find the issue before making a costly repair. Our camera will give us the exact location and depth of your broken pipe to eliminate unnecessary costs and get straight to the heart of the problem.",
+    description: "We offer video inspections of sewer lines to find the issue before making a costly repair. Our camera will give us the exact location and depth of your broken pipe to eliminate unnecessary costs and get straight to the heart of the problem.",
   },
   {
     id: 5,
     name: "Hot Water Heater Maintanace",
-    description: " We with both tank-type and tankless heaters, gas and electric. Don't wait until your HWH catastrophically failes before shopping around for a replacement.",
+    description: " We work with both tank-type and tankless heaters as well as gas and electric. Don't wait until your HWH catastrophically failes before shopping around for a replacement.",
   },
   {
     id: 6,
@@ -38,7 +38,7 @@ function Services() {
   return (
     <>
       <div className="container">
-        <div className="row justify-content-center my-5">
+        <div className="row justify-content-center my-3">
           <div className="font-weight-light display-4">Services</div>
         </div>
         <div className="row justify-content-center">

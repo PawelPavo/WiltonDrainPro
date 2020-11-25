@@ -13,7 +13,7 @@ const ServicesCard: React.FC<ServicesCardProps> = (props) => {
     return (
         <Layout2>
             <div className="col-md-4 my-5 my-auto">
-                <div className="card border-0 mb-5 card-hover" style={{ width: "21rem", height: "21rem" }}>
+                <div className="card mb-5 card-hover border rounded-0" style={{ width: "21rem", height: "21rem" }}>
                     <div className="card-body">
                         <div className="card-title text-center">
                             <IconContext.Provider value={{ style: { fontSize: '45px', color: "#ffbd4a", opacity: "0.75" } }}>
@@ -30,11 +30,11 @@ const ServicesCard: React.FC<ServicesCardProps> = (props) => {
                         <div className="card-title text-center name-text">{props.service.name}</div>
                         <p className="card-text text-center text-muted mb-3">{props.service.description}</p>
                     </div>
-                    <div className="row justify-content-around card-footer bg-white border-0">
+                    <div className="text-center card-footer bg-white border-0">
                         <a href="/contact" className="card-link text-center font-weight-light">
-                            <button type="button" className="btn btn-outline-primary">Email</button>
+                            <button type="button" className="btn btn-outline-primary mr-3">Email</button>
                         </a>
-                        <a href="tel:5613039111" className="btn btn-outline-success rounded-pill px-4">Call</a>
+                        <a href="tel:5613039111" className="btn btn-outline-success rounded-pill px-4 ml-3">Call</a>
                     </div>
                 </div>
             </div>

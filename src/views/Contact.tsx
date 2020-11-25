@@ -36,9 +36,9 @@ const Contact: React.FC<IContactProps> = (props) => {
         subsets={['cyrillic-ext', 'greek']}
       />
       <div className="container">
-        <div className="row justify-content-center display-4 my-5">Contact</div>
+        <div className="row justify-content-center display-4 my-3">Contact</div>
         <div className="row justify-content-center">
-          <div className="col-md-7 shadow p-5">
+          <div className="col-md-7 shadow p-5 bg-white">
             <div className="card border-0">
               <form>
                 <div className="form-group">
@@ -78,12 +78,13 @@ const Contact: React.FC<IContactProps> = (props) => {
               </form>
             </div>
           </div>
-          <div className="col-md-7 text-center my-5 shadow p-5">
-            <iframe src="https://maps.google.com/maps?q=wilton%20manors&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="2" allowFullScreen ></iframe>
+          <div className="col-md-7 text-center my-5 shadow p-5 bg-white">
+            <iframe title="map" src="https://maps.google.com/maps?q=wilton%20manors&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="2" allowFullScreen ></iframe>
             <div className="card-footer border-0 bg-white text-center">
               <div className="my-3">
                 <div>2132 NE 21th Ave.</div>
                 <div>Wilton Manors FL, 33305</div>
+                <div>(561) 303 - 9111</div>
               </div>
               <a href="tel:5613039111" className="btn btn-success btn-lg btn-block">Call Us</a>
             </div>
