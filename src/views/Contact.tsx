@@ -25,7 +25,6 @@ const Contact: React.FC<IContactProps> = (props) => {
 
   return (
     <>
-
       <NavBar />
       <GoogleFontLoader
         fonts={[
@@ -41,9 +40,9 @@ const Contact: React.FC<IContactProps> = (props) => {
         subsets={['cyrillic-ext', 'greek']}
       />
       <Wave>
-        <div className="container">
-          <div className="row mt-3 justify-content-center display-4">Contact</div>
-          <div className="row mt-5 justify-content-center">
+        <div className="container vh-100">
+          <div className="row justify-content-center display-4">Contact</div>
+          <div className="row mt-3 justify-content-center">
             <div className="col-md-8 border p-5 shadow-sm">
               <form>
                 <div className="form-group">
@@ -84,9 +83,6 @@ const Contact: React.FC<IContactProps> = (props) => {
             </div>
           </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#f3f4f5" fillOpacity="1" d="M0,64L80,90.7C160,117,320,171,480,176C640,181,800,139,960,106.7C1120,75,1280,53,1360,42.7L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-        </svg>
       </Wave>
     </>
   )
@@ -94,13 +90,6 @@ const Contact: React.FC<IContactProps> = (props) => {
 
 
 const Wave = styled.div`
-
-img {
-  @media not all and (min-width: 768px) {
-              width: 75%;
-    padding-bottom: 100px;
-  }
-}
 
 `
 export interface IContactProps { }
