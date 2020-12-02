@@ -56,7 +56,7 @@ const Layout2 = styled.div`
 
 .name-text {
     letter-spacing: 2px;
-    font-szie: 18px;
+    font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
 }

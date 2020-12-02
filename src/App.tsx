@@ -8,26 +8,23 @@ import Services from './views/Services';
 function App() {
   return (
     <>
-      <HashRouter basename='/'>
-        <div className="bg-light">
-          <BrowserRouter>
-            <NavigationBar />
+      <div className="bg-light">
+        <HashRouter>
+          <NavigationBar />
 
-            <Switch>
-              <Route exact path="/">
-                <Home />
-              </Route>
-              <Route exact path="/services">
-                <Services />
-              </Route>
-              <Route exact path="/contact">
-                <Contact />
-              </Route>
-            </Switch>
-          </BrowserRouter>
-        </div>
-      </HashRouter>
-
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route exact path="/services">
+              <Services />
+            </Route>
+            <Route exact path="/contact">
+              <Contact />
+            </Route>
+          </Switch>
+        </HashRouter>
+      </div>
     </>
   );
 }

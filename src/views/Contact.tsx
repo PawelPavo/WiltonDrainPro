@@ -79,7 +79,7 @@ const Contact: React.FC<IContactProps> = (props) => {
             </div>
           </div>
           <div className="col-md-7 text-center my-5 shadow p-5 bg-white">
-            <iframe title="map" src="https://maps.google.com/maps?q=wilton%20manors&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="2" allowFullScreen ></iframe>
+            <iframe className="" title="map" src="https://maps.google.com/maps?q=wilton%20manors&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" allowFullScreen ></iframe>
             <div className="card-footer border-0 bg-white text-center">
               <div className="my-3">
                 <div>2132 NE 21th Ave.</div>

@@ -15,7 +15,7 @@ function Home() {
       />
       <div className="container">
         <div className="row justify-content-center my-5">
-          <img className="my-image" src="/Plumbing_Logo-No-BG.png" alt="Logo" style={{height: "auto", width:"60vw"}}/>
+          <img className="my-image" src="https://news-api.s3.us-east-2.amazonaws.com/Plumbing_Logo-No-BG.png" alt="Logo" style={{height: "auto", width:"60vw"}}/>
         </div>
       </div>
     </>
