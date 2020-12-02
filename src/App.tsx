@@ -8,7 +8,7 @@ import Services from './views/Services';
 function App() {
   return (
     <>
-        <HashRouter>
+        <HashRouter basename={process.env.PUBLIC_URL}>
       <div className="bg-light">
           <NavigationBar />
 
@@ -22,6 +22,9 @@ function App() {
             <Route exact path={process.env.PUBLIC_URL + '/contact'}>
               <Contact />
             </Route>
+            <Route path="*">
+							<Home />
+						</Route>
           </Switch>
       </div>
         </HashRouter>
