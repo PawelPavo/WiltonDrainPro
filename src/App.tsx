@@ -7,9 +7,8 @@ import Services from './views/Services';
 
 function App() {
   return (
-    <>
-        <HashRouter>
-      <div className="bg-light">
+      <HashRouter>
+        <div className="bg-light">
           <NavigationBar />
 
           <Switch>
@@ -23,12 +22,11 @@ function App() {
               <Contact />
             </Route>
             <Route path="*">
-							<Home />
-						</Route>
+              <Home />
+            </Route>
           </Switch>
-      </div>
-        </HashRouter>
-    </>
+        </div>
+      </HashRouter>
   );
 }
 
