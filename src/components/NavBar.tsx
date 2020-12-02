@@ -13,7 +13,7 @@ const NavigationBar: React.FC<NavigationBarProps> = (props) => {
                 ]}
             />
             <nav className="sticky-top navbar navbar-expand-lg navbar-light bg-light shadow bg-white">
-                <a className="navbar-brand" href="/">
+                <a className="navbar-brand" href={process.env.PUBLIC_URL + '#/WiltonDrainPro/'}>
                     <img className="ml-5" src="https://news-api.s3.us-east-2.amazonaws.com/Plumbing+Logo.gif" alt="Logo" style={{ height: "65px", width: "auto" }} />
                 </a>
                 <button className="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
