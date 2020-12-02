@@ -8,8 +8,8 @@ import Services from './views/Services';
 function App() {
   return (
     <>
-      <div className="bg-light">
         <HashRouter>
+      <div className="bg-light">
           <NavigationBar />
 
           <Switch>
@@ -23,8 +23,8 @@ function App() {
               <Contact />
             </Route>
           </Switch>
-        </HashRouter>
       </div>
+        </HashRouter>
     </>
   );
 }
