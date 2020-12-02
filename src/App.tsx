@@ -8,7 +8,7 @@ import Services from './views/Services';
 function App() {
   return (
     <>
-        <HashRouter basename={process.env.PUBLIC_URL}>
+        <HashRouter>
       <div className="bg-light">
           <NavigationBar />
 
