@@ -13,13 +13,13 @@ function App() {
           <NavigationBar />
 
           <Switch>
-            <Route exact path="/">
+            <Route exact path={process.env.PUBLIC_URL + '/'}>
               <Home />
             </Route>
-            <Route exact path="/services">
+            <Route exact path={process.env.PUBLIC_URL + '/services'}>
               <Services />
             </Route>
-            <Route exact path="/contact">
+            <Route exact path={process.env.PUBLIC_URL + '/contact'}>
               <Contact />
             </Route>
           </Switch>
