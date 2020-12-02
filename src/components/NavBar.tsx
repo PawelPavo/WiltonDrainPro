@@ -28,7 +28,7 @@ const NavigationBar: React.FC<NavigationBarProps> = (props) => {
                             <a className="nav-link nav-text mx-5" href={process.env.PUBLIC_URL + '#/WiltonDrainPro/'}>Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link nav-text mx-5" href={process.env.PUBLIC_URL + '#/WiltondraibPro/services'}>Services</a>
+                            <a className="nav-link nav-text mx-5" href={process.env.PUBLIC_URL + '#/WiltonDrainPro/services'}>Services</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link nav-text mx-5" href={process.env.PUBLIC_URL + '#/WiltonDrainPro/contact'}>Contact</a>
