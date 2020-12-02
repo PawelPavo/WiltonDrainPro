@@ -25,13 +25,13 @@ const NavigationBar: React.FC<NavigationBarProps> = (props) => {
                     </span>
                     <ul className="navbar-nav font-weight-light mx-auto" style={{ fontSize: "1.2rem" }}>
                         <li className="nav-item">
-                            <a className="nav-link nav-text mx-5" href="/">Home</a>
+                            <a className="nav-link nav-text mx-5" href={process.env.NODE_ENV + '/'}>Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link nav-text mx-5" href="/services">Services</a>
+                            <a className="nav-link nav-text mx-5" href={process.env.NODE_ENV + '/services'}>Services</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link nav-text mx-5" href="contact">Contact</a>
+                            <a className="nav-link nav-text mx-5" href={process.env.PUBLIC_URL + 'contact'}>Contact</a>
                         </li>
                     </ul>
                 </div>
